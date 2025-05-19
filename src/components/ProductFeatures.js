@@ -46,7 +46,7 @@ const ProductFeatures = () => {
             Sleek, Customizable Design for Your Ambiance
           </h2>
           <p className="mb-6 text-sm sm:text-base text-white/90">
-            Established in 2016 in Pune, Maharashtra, Ayushmann Biomass Energy Equipment is a leading manufacturer of
+            Established in 2020 in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, Ayushmann Biomass Energy Equipment is a leading manufacturer of
             storage tanks, pallet trucks, biomass stoves, and more. Our products are renowned for their premium quality and
             affordability, ensuring timely delivery and a strong client base.
           </p>
