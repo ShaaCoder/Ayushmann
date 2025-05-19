@@ -19,15 +19,14 @@ const WhyAyushmann = () => {
             Why Choose Ayushmann Biomass Energy Equipment
           </h2>
           <p className="text-gray-700 mb-4">
-<<<<<<< HEAD
+
             Located at <strong>Gali No.3, Surat Nagar, Bahadurgarh-124507, Distt. Jhajjar</strong>, Ayushmann Biomass Energy Equipment is a trusted manufacturer of high-quality biomass solutions. 
             We provide eco-friendly energy solutions, including 
             <strong> Biomass Wood Pellet Machines</strong>, <strong>Biomass Wood Pellet Burners</strong>, Storage Tanks, Pallet Trucks, Biomass Stoves, and more.
-=======
             Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, we “Ayushmann Biomass Energy Equipment” are a Sole Proprietorship firm,
             engaged as the foremost Manufacturer of <strong>Biomass Wood Pellet Machines</strong>, 
             <strong> Biomass Wood Pellet Burners</strong>, Storage Tanks, Pallet Trucks, Biomass Stoves, and more.
->>>>>>> origin/main
+
           </p>
           <p className="text-gray-600 mb-6">
             Our products are known for their premium quality, cost-effectiveness, and reliability. 
