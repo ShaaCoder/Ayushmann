@@ -38,7 +38,7 @@ const products = [
   },
  {
   title: 'Biomass Stove',
-  slug: 'Biomass Stove',
+  slug: 'biomass-stove',
   description:
     'Our biomass stove offers a clean and energy-efficient solution for heating and cooking in both commercial and industrial settings. Designed to use renewable biomass fuels, it minimizes environmental impact while delivering consistent performance.',
   image: '/biomassstove.webp',
