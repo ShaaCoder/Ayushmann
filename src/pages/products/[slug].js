@@ -36,20 +36,20 @@ const products = [
     ],
     price: 'Contact for pricing',
   },
-  {
-    title: 'pellets',
-    slug: 'pellets',
-    description:
-      'Our pellets offers advanced moisture removal for industrial processes. It ensures quality and consistency by using biomass energy to dry materials efficiently, making it ideal for agricultural and industrial applications.',
-    image: '/pellets.jpg',
-    features: [
-      'Uniform drying with precise temperature control.',
-      'High capacity, suitable for large-scale operations.',
-      'Reduces drying time by up to 30% compared to traditional methods.',
-      'Sustainable design with minimal carbon footprint.',
-    ],
-    price: 'Contact for pricing',
-  },
+ {
+  title: 'Biomass Stove',
+  slug: 'Biomass Stove',
+  description:
+    'Our biomass stove offers a clean and energy-efficient solution for heating and cooking in both commercial and industrial settings. Designed to use renewable biomass fuels, it minimizes environmental impact while delivering consistent performance.',
+  image: '/biomassstove.webp',
+  features: [
+    'Efficient combustion with low emissions.',
+    'Compatible with various biomass fuels like wood pellets and briquettes.',
+    'Durable build for long-term industrial use.',
+    'Eco-friendly alternative to conventional stoves.',
+  ],
+  price: 'Contact for pricing',
+},
 ];
 
 export default function ProductDetails() {
