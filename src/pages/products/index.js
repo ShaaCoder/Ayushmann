@@ -24,14 +24,15 @@ const products = [
     link: '/products/biomass-hotair',
     price: 'Contact for pricing',
   },
-  {
-    title: 'Biomass Pellets',
-    description:
-      'Premium biomass pellets for efficient moisture removal, ensuring quality and consistency in industrial processes.',
-    image: '/pellets.jpg',
-    link: '/products/pellets',
-    price: 'Contact for pricing',
-  },
+{
+  title: 'Biomass Stove',
+  description:
+    'High-efficiency biomass stove designed for clean and sustainable cooking or heating. Ideal for industrial and commercial applications, offering reduced emissions and cost-effective fuel usage.',
+  image: '/biomassstove.webp',
+  link: '/products/biomass-stove',
+  price: 'Contact for pricing',
+},
+
 ];
 
 export default function Products() {
