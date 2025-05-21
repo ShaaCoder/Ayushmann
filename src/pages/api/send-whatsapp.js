@@ -4,26 +4,30 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, phone, service, message } = req.body;
+    const { name, email, contact, phone, product, service, message } = req.body;
 
     // Validate required fields
-    if (!name || !email || !phone || !service) {
-      return res.status(400).json({ error: 'Missing required fields' });
+    if (!name || !email || (!contact && !phone) || (!product && !service)) {
+      return res.status(400).json({ error: 'Missing required fields: name, email, contact/phone, and product/service are required' });
     }
+
+    // Use contact or phone, product or service
+    const contactNumber = contact || phone;
+    const selectedProduct = product || service;
 
     // Format the WhatsApp message
     const formattedMessage = `New Contact Form Submission:
 Name: ${name}
 Email: ${email}
-Phone: ${phone}
-Service: ${service}
+Contact: ${contactNumber}
+Product: ${selectedProduct}
 Message: ${message || 'No message provided'}`;
 
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(formattedMessage);
 
     // WhatsApp API URL with the provided phone number
-    const whatsappNumber = '+918708822925';
+    const whatsappNumber = '+918810524651';
     const whatsappUrl = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(whatsappNumber)}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
     // Return the WhatsApp URL to the client
