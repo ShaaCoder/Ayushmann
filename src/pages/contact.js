@@ -220,9 +220,10 @@ const Contact = () => {
                       <option value="" disabled>
                         Select Service
                       </option>
-                      <option value="biomass-solutions">Biomass Solutions</option>
-                      <option value="storage-tanks">Storage Tanks</option>
-                      <option value="industrial-products">Industrial Products</option>
+                     <option value="biomass-solutions">Biomass Solutions</option>
+                      <option value="biomass-dryers">Biomass dryers</option>
+                      <option value="biomass-hotair">Biomass hotair</option>
+                      <option value="biomass-burner">Biomass burner</option>
                     </select>
                     {errors.service && (
                       <p className="text-red-300 text-xs mt-1">{errors.service}</p>
