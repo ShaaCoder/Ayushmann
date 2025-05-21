@@ -20,7 +20,7 @@ const products = [
     title: 'Biomass Hotair',
     description:
       'High-performance hot air generator using biomass, ideal for drying and heating applications in various industries.',
-    image: '/biomasshotair.avif',
+    image: '/biomasshotair.jpg',
     link: '/products/biomass-hotair',
     price: 'Contact for pricing',
   },
@@ -28,7 +28,7 @@ const products = [
   title: 'Biomass Stove',
   description:
     'High-efficiency biomass stove designed for clean and sustainable cooking or heating. Ideal for industrial and commercial applications, offering reduced emissions and cost-effective fuel usage.',
-  image: '/biomassstove.webp',
+  image: '/biomassstove.jpg',
   link: '/products/biomass-stove',
   price: 'Contact for pricing',
 },
@@ -210,6 +210,7 @@ export default function Products() {
           </div>
         </section>
       </main>
+      <br />
       <Footer />
     </div>
   );
