@@ -68,20 +68,20 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 font-sans">
       <Head>
-        <title>Contact Ayushmann | Biomass Solutions Pune</title>
+        <title>Contact Ayushmann | Biomass Solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar</title>
         <meta
           name="description"
-          content="Contact Ayushmann in Pune, India, for innovative biomass solutions, storage tanks, and industrial products. Reach out via our form, phone, or email."
+          content="Contact Ayushmann in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India, for innovative biomass solutions, and industrial products. Reach out via our form, phone, or email."
         />
         <meta
           name="keywords"
-          content="contact Ayushmann, biomass solutions Pune, industrial storage tanks, Pune industrial products, sustainable solutions"
+          content="contact Ayushmann, biomass solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, industrial storage tanks, Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar industrial products, sustainable solutions"
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Contact Ayushmann | Biomass Solutions Pune" />
+        <meta property="og:title" content="Contact Ayushmann | Biomass Solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar" />
         <meta
           property="og:description"
-          content="Get in touch with Ayushmann for expert biomass solutions and industrial storage tanks in Pune, India."
+          content="Get in touch with Ayushmann for expert biomass solutions and industrial storage tanks in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India."
         />
         <meta property="og:image" content="/biomassBg.jpg" />
         <meta property="og:url" content="https://yourwebsite.com/contact" />
@@ -143,7 +143,7 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Connect with us in Pune, India, to explore innovative biomass solutions and industrial storage tanks.
+              Connect with us in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India, to explore innovative biomass solutions .
             </motion.p>
           </div>
         </section>
@@ -296,7 +296,7 @@ const Contact = () => {
                 <div className="mt-8 relative h-64 sm:h-80">
                   <Image
                     src="/contact.jpg"
-                    alt="Ayushmann Pune Office"
+                    alt="AyushmannGali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar office"
                     fill
                     className="object-cover rounded-2xl shadow-lg"
                     loading="lazy"
