@@ -27,7 +27,7 @@ const products = [
     slug: 'biomass-hotair',
     description:
       'The Biomass Hotair generator is a high-performance system for drying and heating applications. It uses biomass to produce clean, hot air, making it perfect for industries like agriculture, food processing, and manufacturing.',
-    image: '/biomasshotair.avif',
+    image: '/biomasshotair.jpg',
     features: [
       'Produces hot air up to 300°C for diverse applications.',
       'Energy-efficient design reduces operational costs.',
@@ -41,7 +41,7 @@ const products = [
   slug: 'biomass-stove',
   description:
     'Our biomass stove offers a clean and energy-efficient solution for heating and cooking in both commercial and industrial settings. Designed to use renewable biomass fuels, it minimizes environmental impact while delivering consistent performance.',
-  image: '/biomassstove.webp',
+  image: '/biomassstove.jpg',
   features: [
     'Efficient combustion with low emissions.',
     'Compatible with various biomass fuels like wood pellets and briquettes.',
@@ -236,6 +236,7 @@ export default function ProductDetails() {
           </div>
         </section>
       </main>
+      <br />
       <Footer />
     </div>
   );
