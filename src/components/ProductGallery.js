@@ -8,15 +8,11 @@ const products = [
     brand: 'Ayushmann Biomass Pellet Burner Equipment',
     image: '/biomassmachine.jpg',
   },
-  {
-    title: 'Biomass Burner',
-    brand: 'Ayushmann Biomass Burner Equipment',
-    image: '/biomassburner.jpg',
-  },
+ 
   {
     title: 'Hot air',
     brand: 'Ayushmann Biomass Energy Equipment',
-    image: '/hotair.jpeg',
+    image: '/biomasshotair.jpg',
   },
     {
     title: 'burner',
@@ -26,7 +22,12 @@ const products = [
    {
     title: 'Biomass Stove',
     brand: 'Ayushmann Biomass Energy Equipment',
-    image: '/biomassstove.webp',
+    image: '/biomassstove.jpg',
+  },
+    {
+    title: 'pellets',
+    brand: 'Ayushmann Biomass Energy Equipment',
+    image: '/pellets.jpg',
   },
 
 ];
