@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -12,6 +14,8 @@ const HomePage = () => {
     product: '',
   });
   const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const slides = [
     {
@@ -34,33 +38,32 @@ const HomePage = () => {
     },
   ];
 
-const products = [
-  {
-    title: 'Biomass Pellet Burner',
-    description:
-      'Eco-friendly and high-efficiency burner that utilizes biomass pellets for sustainable heating solutions.',
-    image: '/biomassmachine.jpg',
-    link: '/contact',
-    value: 'biomass-burner',
-  },
-  {
-    title: 'Biomass Stove',
-    description:
-      'A versatile and energy-efficient stove that uses biomass fuel, offering a sustainable alternative for cooking and heating.',
-    image: '/biomassstove.webp',
-    link: '/contact',
-    value: 'biomass-stove',
-  },
-  {
-    title: 'Hotair Dryer',
-    description:
-      'Advanced hot air dryer designed for efficient and consistent drying of various materials, powered by renewable biomass energy.',
-    image: '/hotair.jpeg',
-    link: '/contact',
-    value: 'biomass-dryer',
-  },
-];
-
+  const products = [
+    {
+      title: 'Biomass Pellet Burner',
+      description:
+        'Eco-friendly and high-efficiency burner that utilizes biomass pellets for sustainable heating solutions.',
+      image: '/biomassmachine.jpg',
+      link: '/contact',
+      value: 'biomass-burner',
+    },
+    {
+      title: 'Biomass Stove',
+      description:
+        'A versatile and energy-efficient stove that uses biomass fuel, offering a sustainable alternative for cooking and heating.',
+      image: '/biomassstove.jpg',
+      link: '/contact',
+      value: 'biomass-stove',
+    },
+    {
+      title: 'Hotair Dryer',
+      description:
+        'Advanced hot air dryer designed for efficient and consistent drying of various materials, powered by renewable biomass energy.',
+      image: '/biomasshotair.jpg',
+      link: '/contact',
+      value: 'biomass-dryer',
+    },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -89,12 +92,36 @@ const products = [
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log('Form submitted:', formData);
-      setFormData({ name: '', email: '', contact: '', product: '' });
-      setErrors({});
+      try {
+        setStatus('sending');
+        setErrorMessage('');
+        const response = await fetch('/api/send-whatsapp', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          const { url } = await response.json();
+          setStatus('success');
+          setFormData({ name: '', email: '', contact: '', product: '' });
+          setErrors({});
+          window.open(url, '_blank');
+        } else {
+          const { error } = await response.json();
+          setStatus('error');
+          setErrorMessage(error || 'Failed to send enquiry');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        setStatus('error');
+        setErrorMessage('Network error. Please try again later.');
+      }
     }
   };
 
@@ -102,6 +129,8 @@ const products = [
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     setErrors((prev) => ({ ...prev, [name]: '' }));
+    setStatus(null);
+    setErrorMessage('');
   };
 
   return (
@@ -190,7 +219,7 @@ const products = [
             <div className="h-1 w-20 bg-blue-500 mx-auto lg:mx-0" />
           </motion.div>
           <motion.div
-            className="w-full max-w-md bg-white rounded-2xl shadow-xl p- Ambiental6 mt-8 lg:mt-0"
+            className="w-full max-w-md bg-white rounded-2xl shadow-xl p-6 mt-8 lg:mt-0"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
@@ -228,7 +257,7 @@ const products = [
               </div>
               <div>
                 <input
-                  type="text"
+                  type="tel"
                   name="contact"
                   value={formData.contact}
                   onChange={handleChange}
@@ -263,11 +292,20 @@ const products = [
                   <p className="text-red-500 text-xs mt-1">{errors.product}</p>
                 )}
               </div>
+              {status === 'success' && (
+                <p className="text-green-600 text-sm">Enquiry sent successfully!</p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-500 text-sm">{errorMessage}</p>
+              )}
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2.5 rounded-lg font-semibold hover:bg-blue-700 transition-colors hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md"
+                disabled={status === 'sending'}
+                className={`w-full bg-blue-600 text-white py-2.5 rounded-lg font-semibold transition-colors hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-md ${
+                  status === 'sending' ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700'
+                }`}
               >
-                Enquire Now
+                {status === 'sending' ? 'Sending...' : 'Enquire Now'}
               </button>
             </form>
           </motion.div>
