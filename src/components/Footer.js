@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="text-sm leading-6 md:col-span-1">
           <h4 className="text-white text-lg font-semibold mb-2">About Ayushmann Biomass</h4>
           <p className="text-gray-400">
-            We “Ayushmann Biomass” are a Sole Proprietorship firm, engaged as the foremost Manufacturer of Storage Tank, Pallet Truck, Biomass Stove, etc.
+            We “Ayushmann Biomass” are a Sole Proprietorship firm, engaged as the foremost Manufactured of biomass burner biomass stove and bio mass dryier and hotair etc.
           </p>
           {/* <a href="#" className="text-blue-500 text-sm font-semibold mt-2 inline-block">Get a Quote →</a> */}
         </div>
