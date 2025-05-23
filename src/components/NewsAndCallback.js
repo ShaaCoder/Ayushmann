@@ -187,9 +187,10 @@ const NewsAndCallback = () => {
                 aria-describedby={errors.service ? 'service-error' : undefined}
               >
                 <option value="" disabled>Select Your Service</option>
-                <option value="storage-tank">Storage Tank</option>
-                <option value="boiler">Boiler</option>
-                <option value="dryer">Dryer</option>
+                <option value="Biomass-burner">Biomass Burner</option>
+                <option value="Biomass-stove">Biomass Stove</option>
+                <option value="Biomass-Hotair">Biomass Hotair</option>
+                <option value="Biomass-Dryer-Hotair">Biomass Dryer and Hotair</option>
               </select>
               {errors.service && (
                 <p id="service-error" className="text-red-300 text-xs mt-1">{errors.service}</p>
