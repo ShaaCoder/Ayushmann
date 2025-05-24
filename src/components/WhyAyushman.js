@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { CheckCircle } from 'lucide-react';
 import ayushmanImage from '../../public/biomassmachine.jpg';
+import Link from 'next/link';
 
 const WhyAyushmann = () => {
   const benefits = [
@@ -22,10 +23,10 @@ const WhyAyushmann = () => {
 
             Located at <strong>Gali No.3, Surat Nagar, Bahadurgarh-124507, Distt. Jhajjar</strong>, Ayushmann Biomass Energy Equipment is a trusted manufacturer of high-quality biomass solutions. 
             We provide eco-friendly energy solutions, including 
-            <strong> Biomass Wood Pellet Machines</strong>, <strong>Biomass Wood Pellet Burners</strong>, Storage Tanks, Pallet Trucks, Biomass Stoves, and more.
+            <strong> Biomass Wood Pellet Machines</strong>, <strong>Biomass Wood Pellet Burners</strong>, Biomass Stoves, and more.
             Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, we “Ayushmann Biomass Energy Equipment” are a Sole Proprietorship firm,
             engaged as the foremost Manufacturer of <strong>Biomass Wood Pellet Machines</strong>, 
-            <strong> Biomass Wood Pellet Burners</strong>, Storage Tanks, Pallet Trucks, Biomass Stoves, and more.
+            <strong> Biomass Wood Pellet Burners</strong>, Biomass Stoves, and more.
 
           </p>
           <p className="text-gray-600 mb-6">
@@ -44,9 +45,9 @@ const WhyAyushmann = () => {
           </div>
 
           {/* Simple Tailwind Button */}
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-full transition">
+          <Link href="/products" className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-full transition">
             Explore Our Products
-          </button>
+          </Link>
         </div>
 
         {/* Image Section */}
