@@ -80,19 +80,7 @@ const Footer = () => {
         </div>
 
         {/* Google Maps Embed */}
-        <div className="md:col-span-2">
-          <h4 className="text-white text-lg font-semibold mb-2">Our Location</h4>
-          <div className="relative w-full h-64 rounded-xl overflow-hidden shadow-lg">
-            <iframe
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              loading="lazy"
-              allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.057048682973!2d76.92287937549073!3d28.69220407563257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjiNDInMTkuOSJOIDc2wrA1NSczMi40IkU!5e0!3m2!1sen!2sin!4v1698248056287!5m2!1sen!2sin"
-            ></iframe>
-          </div>
-        </div>
+     
       </div>
 
       {/* Bottom Bar */}
