@@ -36,6 +36,12 @@ const HomePage = () => {
         'Transforming industries with cutting-edge technology and expertise.',
       image: '/burner2.jpg',
     },
+    {
+      tagline: 'Ayushmann’s Vision',
+      description:
+        'Transforming industries with cutting-edge technology and expertise.',
+      image: '/pellets.jpg',
+    },
   ];
 
   const products = [
@@ -63,6 +69,7 @@ const HomePage = () => {
       link: '/contact',
       value: 'biomass-dryer',
     },
+    
   ];
 
   useEffect(() => {
