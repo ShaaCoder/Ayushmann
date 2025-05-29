@@ -84,23 +84,23 @@ export default function ProductDetails() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 font-sans">
       <Head>
-        <title>{`${product.title} | Aryan Engineers Biomass Solutions`}</title>
+        <title>{`${product.title} | ayushmannbiomass Biomass Solutions`}</title>
         <meta
           name="description"
-          content={`Learn more about the ${product.title} by Aryan Engineers in Pune, India. ${product.description}`}
+          content={`Learn more about the ${product.title} by ayushmannbiomass in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India. ${product.description}`}
         />
         <meta
           name="keywords"
-          content={`${product.title}, Aryan Engineers products, biomass solutions, industrial storage tanks, biomass burner Pune, sustainable industrial products`}
+          content={`${product.title}, ayushmannbiomass products, biomass solutions, industrial storage tanks, biomass burner Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, sustainable industrial products`}
         />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={`${product.title} | Aryan Engineers Biomass Solutions`} />
+        <meta property="og:title" content={`${product.title} | ayushmannbiomass Biomass Solutions`} />
         <meta
           property="og:description"
-          content={`Discover the ${product.title} by Aryan Engineers, a leader in biomass solutions and industrial products in Pune, India.`}
+          content={`Discover the ${product.title} by ayushmannbiomass, a leader in biomass solutions and industrial products in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India.`}
         />
         <meta property="og:image" content={product.image} />
-        <meta property="og:url" content={`https://yourwebsite.com/products/${slug}`} />
+        <meta property="og:url" content={`https://www.ayushmannbiomass.com/products/${slug}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <script
           type="application/ld+json"
@@ -111,10 +111,10 @@ export default function ProductDetails() {
               name: product.title,
               description: product.description,
               image: product.image,
-              url: `https://yourwebsite.com/products/${slug}`,
+              url: `https://www.ayushmannbiomass.com/products/${slug}`,
               brand: {
                 '@type': 'Brand',
-                name: 'Aryan Engineers',
+                name: 'ayushmannbiomass',
               },
               offers: {
                 '@type': 'Offer',
@@ -132,7 +132,7 @@ export default function ProductDetails() {
           <div className="absolute inset-0">
             <Image
               src={product.image}
-              alt={`${product.title} by Aryan Engineers`}
+              alt={`${product.title} by ayushmannbiomass`}
               fill
               className="object-cover opacity-30"
               priority
@@ -154,7 +154,7 @@ export default function ProductDetails() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Discover how Aryan Engineers’ {product.title} can enhance your industrial processes with sustainable solutions.
+              Discover how ayushmannbiomass’ {product.title} can enhance your industrial processes with sustainable solutions.
             </motion.p>
           </div>
         </section>
