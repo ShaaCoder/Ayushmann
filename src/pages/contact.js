@@ -68,53 +68,56 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 font-sans">
       <Head>
-        <title>Contact Ayushmann | Biomass Solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar</title>
-        <meta
-          name="description"
-          content="Contact Ayushmann in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India, for innovative biomass solutions, and industrial products. Reach out via our form, phone, or email."
-        />
-        <meta
-          name="keywords"
-          content="contact Ayushmann, biomass solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, industrial storage tanks, Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar industrial products, sustainable solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Contact Ayushmann | Biomass Solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar" />
-        <meta
-          property="og:description"
-          content="Get in touch with Ayushmann for expert biomass solutions and industrial storage tanks in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India."
-        />
-        <meta property="og:image" content="/biomassBg.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/contact" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Ayushmann',
-              url: 'https://yourwebsite.com',
-              logo: '/logo.png',
-              description:
-                'Ayushmann is a trusted firm in Bahadurgarh, India, specializing in biomass solutions,  industrial products.',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar',
-                addressLocality: 'Bahadurgarh',
-                addressRegion: 'Haryana',
-                postalCode: '124507',
-                addressCountry: 'IN',
-              },
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '8708822925',
-                contactType: 'Customer Service',
-                email: 'ayushmannbiomassenergy@gmail.com',
-              },
-            }),
-          }}
-        />
-      </Head>
+  <title>Contact Ayushmann | Biomass Solutions in Bahadurgarh, Haryana</title>
+  <meta
+    name="description"
+    content="Reach out to Ayushmann for sustainable biomass energy solutions, industrial storage tanks, and more. Located in Gali No.3, Surat Nagar, Bahadurgarh, Haryana - 124507."
+  />
+  <meta
+    name="keywords"
+    content="Contact Ayushmann, biomass solutions Bahadurgarh, industrial tanks Haryana, biomass energy India, Gali No.3 Surat Nagar, sustainable solutions"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Contact Ayushmann | Biomass Solutions in Bahadurgarh, Haryana" />
+  <meta
+    property="og:description"
+    content="Get in touch with Ayushmann for expert biomass solutions and industrial products in Bahadurgarh, Haryana."
+  />
+  <meta property="og:image" content="/biomassBg.jpg" />
+  <meta property="og:url" content="https://www.ayushmannbiomass.com/contact-ayushmann" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://www.ayushmannbiomass.com/contact" />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Ayushmann',
+        url: 'https://www.ayushmannbiomass.com',
+        logo: '/logo.png',
+        description:
+          'Ayushmann offers biomass solutions and industrial storage products in Bahadurgarh, Haryana.',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Gali No.3, Surat Nagar',
+          addressLocality: 'Bahadurgarh',
+          addressRegion: 'Haryana',
+          postalCode: '124507',
+          addressCountry: 'IN',
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+91-8708822925',
+          contactType: 'Customer Service',
+          email: 'kveerse370@gmail.com',
+        },
+      }),
+    }}
+  />
+</Head>
+
       <Header />
       <main className="flex-grow">
         <section className="relative min-h-[400px] bg-gradient-to-b from-blue-900 to-blue-700 text-white">
