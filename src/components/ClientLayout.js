@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Header from './Header';
 import HeroSection from './HeroSection';
-import ProductShowcase from './ProductShowcase';
 import WhyAryanEngineering from './WhyAyushman';
 import ProductFeatures from './ProductFeatures';
 import ProductGallery from './ProductGallery';
@@ -55,6 +54,8 @@ const ClientLayout = () => {
               "logo": "https://www.ayushmannbiomass.com/logo.png",
               "sameAs": [
                 "https://www.facebook.com/yourpage",
+                "https://www.linkedin.com/company/yourcompany",
+                "https://twitter.com/yourhandle"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -78,7 +79,7 @@ const ClientLayout = () => {
       <Header />
       <HeroSection />
       <WhyAryanEngineering />
-      <ProductShowcase />
+
       <ProductFeatures />
       <ProductGallery />
       <NewsAndCallback />
