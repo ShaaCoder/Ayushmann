@@ -27,7 +27,7 @@ Message: ${message || 'No message provided'}`;
     const encodedMessage = encodeURIComponent(formattedMessage);
 
     // WhatsApp API URL with the provided phone number
-    const whatsappNumber = '+918810524651';
+    const whatsappNumber = '+918708822925';
     const whatsappUrl = `https://api.whatsapp.com/send/?phone=${encodeURIComponent(whatsappNumber)}&text=${encodedMessage}&type=phone_number&app_absent=0`;
 
     // Return the WhatsApp URL to the client
