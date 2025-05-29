@@ -9,54 +9,58 @@ import Footer from '@/components/Footer';
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Head>
-        <title>AboutAyushmann | Biomass Solutions & Storage Tanks</title>
-        <meta
-          name="description"
-          content="Learn about Ayushmann, a leading provider of biomass solutions, storage tanks, and industrial products in Pune, India. Discover our mission, history, and commitment to sustainability."
-        />
-        <meta
-          name="keywords"
-          content="Aryan Engineers, biomass solutions, storage tanks, industrial products, Pune, sustainable industrial solutions"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AboutAyushmann | Biomass Solutions & Storage Tanks" />
-        <meta
-          property="og:description"
-          content="Discover Ayushmann, your trusted partner for innovative biomass solutions and industrial storage tanks in Pune, India."
-        />
-        <meta property="og:image" content="/biomassBg.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/about" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'Ayushmann',
-              url: 'https://yourwebsite.com',
-              logo: '/logo.png',
-              description:
-                'Ayushmann is a trusted firm in Pune, India, specializing in biomass solutions, storage tanks, and industrial products.',
-               address: {
-                '@type': 'PostalAddress',
-                streetAddress: 'Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar',
-                addressLocality: 'Bahadurgarh',
-                addressRegion: 'Haryana',
-                postalCode: '124507',
-                addressCountry: 'IN',
-              },
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '8708822925',
-                contactType: 'Customer Service',
-                email: 'kveerse370@gmail.com',
-              },
-            }),
-          }}
-        />
-      </Head>
+     <Head>
+  <title>About Ayushmann | Biomass Solutions & Storage Tanks</title>
+  <meta
+    name="description"
+    content="Learn about Ayushmann, a leading provider of biomass solutions, storage tanks, and industrial products in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India. Discover our mission, history, and commitment to sustainability that drives innovation and eco-friendly practices."
+  />
+  <meta
+    name="keywords"
+    content="Aryan Engineers, biomass solutions, storage tanks, industrial products, Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, sustainable industrial solutions, biomass burners, eco-friendly storage tanks, renewable energy solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar"
+  />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="About Ayushmann | Biomass Solutions & Storage Tanks" />
+  <meta
+    property="og:description"
+    content="Discover Ayushmann, your trusted partner for innovative biomass solutions and industrial storage tanks in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India."
+  />
+  <meta property="og:image" content="https://www.ayushmannbiomass.com/biomassBg.jpg" />
+  <meta property="og:url" content="https://www.ayushmannbiomass.com/about" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Ayushmann',
+        url: 'https://www.ayushmannbiomass.com/',
+        logo: 'https://www.ayushmannbiomass.com/logo.png',
+        description:
+          'Ayushmann is a trusted firm in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, India, specializing in biomass solutions, storage tanks, and industrial products.',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar',
+          addressLocality: 'Bahadurgarh',
+          addressRegion: 'Haryana',
+          postalCode: '124507',
+          addressCountry: 'IN',
+        },
+        contactPoint: {
+          '@type': 'ContactPoint',
+          telephone: '+918708822925',
+          contactType: 'Customer Service',
+          email: 'kveerse370@gmail.com',
+        },
+        sameAs: [
+          'https://www.facebook.com/ayushmann',
+        ],
+      }),
+    }}
+  />
+</Head>
+
       <Header />
       <main className="flex-grow bg-gray-50 font-sans">
         {/* Hero Section */}
@@ -192,7 +196,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <p>
-                Established over a decade ago in Pune,Ayushmann began as a small enterprise with a vision to revolutionize the industrial sector. Our focus on <strong>biomass solutions</strong>  quickly gained traction, earning us a reputation for reliability and innovation.
+                Established over a decade ago in Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar,Ayushmann began as a small enterprise with a vision to revolutionize the industrial sector. Our focus on <strong>biomass solutions</strong>  quickly gained traction, earning us a reputation for reliability and innovation.
               </p>
               <p>
                 Today, we are a global leader, serving clients across industries with a diverse portfolio that includes biomass burners, dryers, and pellets . Our commitment to sustainability and customer satisfaction drives us to continuously improve and expand our offerings.
@@ -232,6 +236,7 @@ const About = () => {
           </div>
         </section>
       </main>
+      <br />
       <Footer />
     </div>
   );
