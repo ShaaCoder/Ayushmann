@@ -17,7 +17,7 @@ const About = () => {
   />
   <meta
     name="keywords"
-    content="Aryan Engineers, biomass solutions, storage tanks, industrial products, Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, sustainable industrial solutions, biomass burners, eco-friendly storage tanks, renewable energy solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar"
+    content="Ayushmann, biomass solutions, storage tanks, industrial products, Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar, sustainable industrial solutions, biomass burners, eco-friendly storage tanks, renewable energy solutions Gali No.3 Surat Nagar Bahadurgarh-124507, Distt. Jhajjar"
   />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="About Ayushmann | Biomass Solutions & Storage Tanks" />
@@ -68,7 +68,7 @@ const About = () => {
           <div className="absolute inset-0">
             <Image
               src="/biomassBg.jpg"
-              alt="Aryan Engineers Biomass Solutions"
+              alt="Ayushmann Biomass Solutions"
               fill
               className="object-cover opacity-30"
               priority
@@ -122,7 +122,7 @@ const About = () => {
               >
                 <Image
                   src="/burner1.jpg"
-                  alt="Aryan Engineers Industrial Facility"
+                  alt="Ayushmann Industrial Facility"
                   fill
                   className="object-cover rounded-2xl shadow-lg"
                   loading="lazy"
