@@ -111,7 +111,7 @@ const Contact = () => {
           '@type': 'ContactPoint',
           telephone: '+91-8708822925',
           contactType: 'Customer Service',
-          email: 'kveerse370@gmail.com',
+          email: 'ayushmannbiomassenergy@gmail.com',
         },
       }),
     }}
@@ -288,10 +288,10 @@ const Contact = () => {
                     <h3 className="text-lg font-semibold text-gray-800">Email</h3>
                     <p className="text-gray-600 text-sm">
                       <a
-                        href="mailto:kveerse370@gmail.com"
+                        href="mailto:ayushmannbiomassenergy@gmail.com"
                         className="hover:text-blue-600 transition-colors"
                       >
-                       kveerse370@gmail.com
+                      ayushmannbiomassenergy@gmail.com
                       </a>
                     </p>
                   </div>
